@@ -1,3 +1,8 @@
+//GameScene.swift
+//Author's name: Pratiksha Kathiriya
+//Student ID: 301093309
+//Test Date: Feb 19,20
+
 
 import UIKit
 import AVFoundation
@@ -37,7 +42,7 @@ class GameScene: SKScene {
         self.addChild(oceanSprite1!)
         
         self.oceanSprite2 = Ocean()
-        self.oceanSprite2?.position = CGPoint(x: 800, y: 0)
+        self.oceanSprite2?.position = CGPoint(x: 801, y: 0)
         self.addChild(oceanSprite2!)
         
         // add plane
@@ -50,7 +55,7 @@ class GameScene: SKScene {
         self.addChild(islandSprite!)
         
         // add clouds
-        for index in 0...3
+        for index in 0...0
         {
             let cloud: Cloud = Cloud()
             cloudSprites.append(cloud)
@@ -78,17 +83,17 @@ class GameScene: SKScene {
     
     func touchDown(atPoint pos : CGPoint)
     {
-        self.planeSprite?.TouchMove(newPos: CGPoint(x: pos.x, y: -575))
+        self.planeSprite?.TouchMove(newPos: CGPoint(x: -385, y: pos.y))
     }
     
     func touchMoved(toPoint pos : CGPoint)
     {
-        self.planeSprite?.TouchMove(newPos: CGPoint(x: pos.x, y: -575))
+        self.planeSprite?.TouchMove(newPos: CGPoint(x: -385, y: pos.y))
     }
     
     func touchUp(atPoint pos : CGPoint)
     {
-        self.planeSprite?.TouchMove(newPos: CGPoint(x: pos.x, y: -575))
+        self.planeSprite?.TouchMove(newPos: CGPoint(x: -385, y: pos.y))
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)

@@ -1,10 +1,7 @@
-//
-//  GameViewController.swift
-//  MAPD724-W2020-Lesson2
-//
-//  Created by Tom Tsiliopoulos on 2020-01-15.
-//  Copyright © 2020 CentennialCollege. All rights reserved.
-//
+//GameViewController.swift
+//Author's name: Pratiksha Kathiriya
+//Student ID: 301093309
+//Test Date: Feb 19,20
 
 import UIKit
 import SpriteKit
