@@ -33,16 +33,16 @@ class GameScene: SKScene {
         
         // add ocean
         self.oceanSprite1 = Ocean()
-        self.oceanSprite1?.position = CGPoint(x: 0, y: 1864.67)
+        self.oceanSprite1?.position = CGPoint(x: 0, y: 0)
         self.addChild(oceanSprite1!)
         
         self.oceanSprite2 = Ocean()
-        self.oceanSprite2?.position = CGPoint(x: 0, y: 177)
+        self.oceanSprite2?.position = CGPoint(x: 800, y: 0)
         self.addChild(oceanSprite2!)
         
         // add plane
         self.planeSprite = Plane()
-        self.planeSprite?.position = CGPoint(x: 0, y: -575)
+        self.planeSprite?.position = CGPoint(x: -385, y: 0)
         self.addChild(planeSprite!)
         
         // add island
